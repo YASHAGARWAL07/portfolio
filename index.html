@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yash Agarwal - Portfolio (iPhone 3D)</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .iphone-frame {
+      width: 320px;
+      height: 640px;
+      border: 16px solid #333;
+      border-radius: 36px;
+      position: relative;
+      background: #000;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      perspective: 1000px;
+      transform: rotateX(10deg) rotateY(-10deg);
+    }
+    .iphone-screen {
+      width: 100%;
+      height: 100%;
+      background: white;
+      border-radius: 20px;
+      overflow-y: auto;
+      padding: 1rem;
+      box-sizing: border-box;
+      color: #111;
+    }
+    .iphone-notch {
+      position: absolute;
+      top: -16px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 160px;
+      height: 30px;
+      background: #333;
+      border-radius: 0 0 20px 20px;
+      z-index: 2;
+    }
+    h1, h2, h3 {
+      margin: 0.5rem 0;
+    }
+    .section {
+      margin-bottom: 1.5rem;
+    }
+    .project {
+      background: #f8f8f8;
+      padding: 0.75rem;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="iphone-frame">
+    <div class="iphone-notch"></div>
+    <div class="iphone-screen">
+      <header class="section">
+        <h1 class="text-2xl font-bold">Yash Agarwal</h1>
+        <p class="text-sm text-gray-600">CSE Student | Developer</p>
+      </header>
+
+      <div class="section">
+        <h2 class="text-lg font-semibold">About Me</h2>
+        <p>I'm a Computer Science student at the Central University of Rajasthan. I love building projects, learning new tech, and solving real-world problems.</p>
+      </div>
+
+      <div class="section">
+        <h2 class="text-lg font-semibold">Projects</h2>
+        <div class="project">
+          <h3>Heart Disease Prediction</h3>
+          <p>ML model using Python for predicting heart conditions.</p>
+        </div>
+        <div class="project">
+          <h3>Keylogger Detection (CDAC)</h3>
+          <p>Security tool to detect and block keyloggers in Windows OS.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="text-lg font-semibold">Contact</h2>
+        <p>Email: yash.agarwal@email.com</p>
+        <p><a href="https://www.linkedin.com/in/yashagarwal123" target="_blank" style="color: blue; text-decoration: underline;">LinkedIn Profile</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,51 +1,38 @@
 body {
   margin: 0;
-  background-color: #000;
   font-family: Arial, sans-serif;
-  color: white;
+  background: #000;
+  color: #fff;
   text-align: center;
 }
-
-.container {
-  padding: 30px 10px;
+h1 {
+  margin-top: 20px;
+  font-size: 2em;
 }
-
-.profile-pic {
+.subtitle {
+  font-size: 1.2em;
+  color: #aaa;
+}
+.profile {
+  margin-top: 10px;
+}
+.profile img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
+  border: 3px solid #ffffff33;
   object-fit: cover;
-  border: 3px solid #fff;
-  margin-bottom: 10px;
 }
-
-h1 {
-  margin: 10px 0 5px;
-  font-size: 2em;
-}
-
-.subtitle {
-  margin: 0;
-  font-size: 1.1em;
-  color: #ccc;
-}
-
-.scores {
-  font-size: 0.95em;
-  color: #aaa;
-}
-
 .icons {
-  margin-top: 20px;
+  margin-top: 30px;
 }
-
 .icons a img {
-  width: 40px;
-  height: 40px;
-  margin: 8px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 12px;
   transition: transform 0.2s ease;
 }
-
 .icons a img:hover {
   transform: scale(1.15);
 }

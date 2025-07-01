@@ -4,29 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yash Agarwal | Portfolio</title>
+
+  <!-- 3D Model Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+  <!-- Styling -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Profile and Info -->
-  <div class="overlay">
-    <img src="photo.jpeg" alt="Yash Agarwal" class="profile" />
-    <div class="info">
-      <h1>Yash Agarwal</h1>
-      <p>Passionate CSE Student @ CURAJ</p>
-      <p>SGPA: 9.05 | 10th: 94.8% | 12th: 94.2%</p>
-    </div>
-    <div class="icons">
-      <a href="mailto:yashagarwal2100@gmail.com" title="Gmail"><img src="gmail.png" alt="Gmail"></a>
-      <a href="https://www.linkedin.com/in/yash-agarwal0007" target="_blank" title="LinkedIn"><img src="linkedin.png" alt="LinkedIn"></a>
-      <a href="https://x.com/YASH_AGARWAL_O7" target="_blank" title="Twitter"><img src="twitter.png" alt="Twitter"></a>
-      <a href="https://leetcode.com/u/YASH_AGARWAL_07/" target="_blank" title="LeetCode"><img src="LeetCode.png" alt="LeetCode"></a>
-      <a href="https://www.curaj.ac.in" target="_blank" title="CURAJ"><img src="curaj.png" alt="CURAJ"></a>
-    </div>
-  </div>
+  <div class="container">
+    <!-- Profile -->
+    <img src="photo.jpeg" alt="Yash Agarwal" class="profile-pic" />
+    <h1>Yash Agarwal</h1>
+    <p class="subtitle">Passionate CSE Student @ CURAJ</p>
+    <p class="scores">SGPA: 9.05 | 10th: 94.8% | 12th: 94.2%</p>
 
-  <!-- 3D iPhone Scene -->
-  <script type="module" src="script.js"></script>
+    <!-- Icons -->
+    <div class="icons">
+      <a href="mailto:yashagarwal2100@gmail.com" title="Gmail"><img src="gmail.png" alt="Gmail" /></a>
+      <a href="https://www.linkedin.com/in/yash-agarwal0007" target="_blank" title="LinkedIn"><img src="linkedin.png" alt="LinkedIn" /></a>
+      <a href="https://x.com/YASH_AGARWAL_O7" target="_blank" title="Twitter"><img src="twitter.png" alt="Twitter" /></a>
+      <a href="https://leetcode.com/u/YASH_AGARWAL_07/" target="_blank" title="LeetCode"><img src="LeetCode.png" alt="LeetCode" /></a>
+      <a href="https://www.curaj.ac.in/" target="_blank" title="CURAJ"><img src="curaj.png" alt="CURAJ" /></a>
+    </div>
+
+    <!-- 3D Model -->
+    <model-viewer
+      src="iphone_16_pro_max.glb"
+      alt="iPhone 16 Pro Max 3D Model"
+      auto-rotate
+      camera-controls
+      ar
+      shadow-intensity="1"
+      exposure="1"
+      style="width: 100%; max-width: 600px; height: 600px; margin-top: 40px;">
+    </model-viewer>
+  </div>
 
 </body>
 </html>
